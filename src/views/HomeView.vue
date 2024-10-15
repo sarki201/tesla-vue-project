@@ -1,5 +1,11 @@
 <script setup lang="ts">
-import TheWelcome from "../components/TheWelcome.vue";
+import Charts from "@/components/Charts.vue";
+import Selects from "@/components/Selects.vue";
 </script>
 
-<template> </template>
+<template>
+  <main>
+    <Selects />
+    <Charts />
+  </main>
+</template>
