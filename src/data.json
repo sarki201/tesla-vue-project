@@ -1,0 +1,353 @@
+{
+  "totalUsers": 80,
+  "activeUsers": 43,
+  "questionsAnswered": 3298,
+  "averageSessionLength": "2m 45s",
+  "startingKnowledge": 64,
+  "currentKnowledge": 86,
+  "knowledgeGain": 34,
+  "activity": {
+    "years": [
+      {
+        "date": 2014,
+        "percentage": 76
+      },
+      {
+        "date": 2015,
+        "percentage": 52
+      },
+      {
+        "date": 2016,
+        "percentage": 96
+      },
+      {
+        "date": 2017,
+        "percentage": 28
+      },
+      {
+        "date": 2018,
+        "percentage": 56
+      },
+      {
+        "date": 2019,
+        "percentage": 45
+      },
+      {
+        "date": 2020,
+        "percentage": 84
+      },
+      {
+        "date": 2021,
+        "percentage": 29
+      },
+      {
+        "date": 2022,
+        "percentage": 59
+      },
+      {
+        "date": 2023,
+        "percentage": 99
+      },
+      {
+        "date": 2024,
+        "percentage": 77
+      }
+    ],
+    "months": [
+      {
+        "date": "JAN",
+        "percentage": 25
+      },
+      {
+        "date": "FEB",
+        "percentage": 85
+      },
+      {
+        "date": "MAR",
+        "percentage": 52
+      },
+      {
+        "date": "APR",
+        "percentage": 22
+      },
+      {
+        "date": "MAY",
+        "percentage": 76
+      },
+      {
+        "date": "JUN",
+        "percentage": 97
+      },
+      {
+        "date": "JUL",
+        "percentage": 34
+      },
+      {
+        "date": "AUG",
+        "percentage": 75
+      },
+      {
+        "date": "SEP",
+        "percentage": 79
+      },
+      {
+        "date": "OCT",
+        "percentage": 81
+      },
+      {
+        "date": "NOV",
+        "percentage": 89
+      },
+      {
+        "date": "DEC",
+        "percentage": 95
+      }
+    ]
+  },
+  "topics": [
+    {
+      "name": "Covid Protocols",
+      "picture": "@/assets/img/thumbnail-4.png",
+      "strength": 95
+    },
+    {
+      "name": "Cyber Security Basics",
+      "picture": "@/assets/img/thumbnail-5.png",
+      "strength": 92
+    },
+    {
+      "name": "Social Media Policies",
+      "picture": "@/assets/img/thumbnail-6.png",
+      "strength": 89
+    },
+    {
+      "name": "Food Safety",
+      "picture": "@/assets/img/thumbnail-1.png",
+      "strength": 74
+    },
+    {
+      "name": "Compliance Basics Procedures",
+      "picture": "@/assets/img/thumbnail-2.png",
+      "strength": 52
+    },
+    {
+      "name": "Company Networking",
+      "picture": "@/assets/img/thumbnail-3.png",
+      "strength": 36
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Zariyah Suarez",
+      "rank": 1,
+      "isPromoted": false,
+      "img": ""
+    },
+    {
+      "id": 2,
+      "name": "Soren Rose",
+      "rank": 1,
+      "isPromoted": true,
+      "img": ""
+    },
+    {
+      "id": 3,
+      "name": "Magnolia Bell",
+      "rank": 1,
+      "isPromoted": false,
+      "img": ""
+    },
+    {
+      "id": 4,
+      "name": "Emmett Mullins",
+      "rank": 1,
+      "isPromoted": true,
+      "img": ""
+    },
+    {
+      "id": 5,
+      "name": "Maliyah Singleton",
+      "rank": 1,
+      "isPromoted": false,
+      "img": ""
+    },
+    {
+      "id": 6,
+      "name": "Landyn Greene",
+      "rank": 1,
+      "isPromoted": true,
+      "img": ""
+    },
+    {
+      "id": 7,
+      "name": "Selena Bradley",
+      "rank": 1,
+      "isPromoted": false,
+      "img": ""
+    },
+    {
+      "id": 8,
+      "name": "Richard Conway",
+      "rank": 1,
+      "isPromoted": true,
+      "img": ""
+    },
+    {
+      "id": 9,
+      "name": "Ryann Maddox",
+      "rank": 1,
+      "isPromoted": false,
+      "img": ""
+    },
+    {
+      "id": 10,
+      "name": "Lyric Avalos",
+      "rank": 1,
+      "isPromoted": true,
+      "img": ""
+    },
+    {
+      "id": 11,
+      "name": "Paloma Howard",
+      "rank": 1,
+      "isPromoted": false,
+      "img": ""
+    },
+    {
+      "id": 12,
+      "name": "Jeremiah French",
+      "rank": 1,
+      "isPromoted": true,
+      "img": ""
+    },
+    {
+      "id": 13,
+      "name": "Lorelai McPherson",
+      "rank": 1,
+      "isPromoted": false,
+      "img": ""
+    },
+    {
+      "id": 14,
+      "name": "Foster Harrington",
+      "rank": 1,
+      "isPromoted": true,
+      "img": ""
+    },
+    {
+      "id": 15,
+      "name": "Legacy Lynn",
+      "rank": 1,
+      "isPromoted": false,
+      "img": ""
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "name": "The Water Coolers",
+      "rank": 1,
+      "isPromoted": true,
+      "points": "52 Points / User - 97% Correct"
+    },
+    {
+      "id": 2,
+      "name": "The Scanners",
+      "rank": 2,
+      "isPromoted": false,
+      "points": "52 Points / User - 95% Correct"
+    },
+    {
+      "id": 3,
+      "name": "Boss Mode",
+      "rank": 3,
+      "isPromoted": true,
+      "points": "52 Points / User - 87% Correct"
+    },
+    {
+      "id": 4,
+      "name": "Lunch Room Bandits",
+      "rank": 4,
+      "isPromoted": false,
+      "points": "52 Points / User - 80% Correct"
+    },
+    {
+      "id": 5,
+      "name": "Never Overtime",
+      "rank": 5,
+      "isPromoted": true,
+      "points": "52 Points / User - 97% Correct"
+    },
+    {
+      "id": 6,
+      "name": "We Break for No-one",
+      "rank": 6,
+      "isPromoted": false,
+      "points": "52 Points / User - 97% Correct"
+    },
+    {
+      "id": 7,
+      "name": "Desk Champions",
+      "rank": 7,
+      "isPromoted": true,
+      "points": "52 Points / User - 97% Correct"
+    },
+    {
+      "id": 8,
+      "name": "Office Heroes",
+      "rank": 8,
+      "isPromoted": false,
+      "points": "52 Points / User - 97% Correct"
+    },
+    {
+      "id": 9,
+      "name": "Not Your Ordinary Desk Jockeys",
+      "rank": 9,
+      "isPromoted": true,
+      "points": "52 Points / User - 97% Correct"
+    },
+    {
+      "id": 10,
+      "name": "Better Nine Than Five",
+      "rank": 10,
+      "isPromoted": false,
+      "points": "52 Points / User - 97% Correct"
+    },
+    {
+      "id": 11,
+      "name": "All Play and No Work",
+      "rank": 11,
+      "isPromoted": true,
+      "points": "52 Points / User - 97% Correct"
+    },
+    {
+      "id": 12,
+      "name": "Monday to Fri-yay",
+      "rank": 12,
+      "isPromoted": false,
+      "points": "52 Points / User - 97% Correct"
+    },
+    {
+      "id": 13,
+      "name": "925ers",
+      "rank": 13,
+      "isPromoted": true,
+      "points": "52 Points / User - 97% Correct"
+    },
+    {
+      "id": 14,
+      "name": "The Squad",
+      "rank": 14,
+      "isPromoted": false,
+      "points": "52 Points / User - 97% Correct"
+    },
+    {
+      "id": 15,
+      "name": "Calculated Victory",
+      "rank": 15,
+      "isPromoted": true,
+      "points": "52 Points / User - 97% Correct"
+    }
+  ]
+}

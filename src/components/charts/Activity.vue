@@ -1,13 +1,33 @@
 <script setup lang="ts">
 import "primeicons/primeicons.css";
+import data from "@/data.json";
+import { computed, ref, type Ref } from "vue";
+
+type RateSwitch = "Month" | "Year";
+
+const rateSwitch: Ref<RateSwitch> = ref("Month");
+
+const switchRate = () => {
+  if (rateSwitch.value === "Month") {
+    rateSwitch.value = "Year";
+  } else {
+    rateSwitch.value = "Month";
+  }
+};
+
+const rateData = computed(() => {
+  return rateSwitch.value === "Month"
+    ? data.activity.months
+    : data.activity.years;
+});
 </script>
 
 <template>
   <article class="chart charts__activity">
     <div class="activity__head">
       <h6 class="overview__head">Activity</h6>
-      <h6 class="activity__drop">
-        Month
+      <h6 @click="switchRate" class="activity__drop">
+        {{ rateSwitch }}
         <i class="pi pi-chevron-down"></i>
       </h6>
     </div>
@@ -20,76 +40,13 @@ import "primeicons/primeicons.css";
         <div class="activity__label text-sm">300</div>
         <div class="activity__label text-sm">400</div>
       </div>
-      <div class="activity__month">
-        <div class="activity__month-name text-sm">JAN</div>
+      <div v-for="rate in rateData" :key="rate.date" class="activity__month">
+        <div class="activity__month-name text-sm">{{ rate.date }}</div>
         <div class="activity__month-chart">
-          <div class="activity__month-chart-child" style="height: 25%"></div>
-        </div>
-      </div>
-      <div class="activity__month">
-        <div class="activity__month-name text-sm">FEB</div>
-        <div class="activity__month-chart">
-          <div class="activity__month-chart-child" style="height: 23%"></div>
-        </div>
-      </div>
-      <div class="activity__month">
-        <div class="activity__month-name text-sm">MAR</div>
-        <div class="activity__month-chart">
-          <div class="activity__month-chart-child" style="height: 23%"></div>
-        </div>
-      </div>
-      <div class="activity__month">
-        <div class="activity__month-name text-sm">APR</div>
-        <div class="activity__month-chart">
-          <div class="activity__month-chart-child" style="height: 52%"></div>
-        </div>
-      </div>
-      <div class="activity__month">
-        <div class="activity__month-name text-sm">MAY</div>
-        <div class="activity__month-chart">
-          <div class="activity__month-chart-child" style="height: 60%"></div>
-        </div>
-      </div>
-      <div class="activity__month">
-        <div class="activity__month-name text-sm">JUN</div>
-        <div class="activity__month-chart">
-          <div class="activity__month-chart-child" style="height: 50%"></div>
-        </div>
-      </div>
-      <div class="activity__month">
-        <div class="activity__month-name text-sm">JUL</div>
-        <div class="activity__month-chart">
-          <div class="activity__month-chart-child" style="height: 56%"></div>
-        </div>
-      </div>
-      <div class="activity__month">
-        <div class="activity__month-name text-sm">AUG</div>
-        <div class="activity__month-chart">
-          <div class="activity__month-chart-child" style="height: 25%"></div>
-        </div>
-      </div>
-      <div class="activity__month">
-        <div class="activity__month-name text-sm">SEP</div>
-        <div class="activity__month-chart">
-          <div class="activity__month-chart-child" style="height: 70%"></div>
-        </div>
-      </div>
-      <div class="activity__month">
-        <div class="activity__month-name text-sm">OCT</div>
-        <div class="activity__month-chart">
-          <div class="activity__month-chart-child" style="height: 80%"></div>
-        </div>
-      </div>
-      <div class="activity__month">
-        <div class="activity__month-name text-sm">NOV</div>
-        <div class="activity__month-chart">
-          <div class="activity__month-chart-child" style="height: 90%"></div>
-        </div>
-      </div>
-      <div class="activity__month">
-        <div class="activity__month-name text-sm">DEC</div>
-        <div class="activity__month-chart">
-          <div class="activity__month-chart-child" style="height: 100%"></div>
+          <div
+            class="activity__month-chart-child"
+            :style="`height: ${rate.percentage}%`"
+          ></div>
         </div>
       </div>
     </div>
