@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import "primeicons/primeicons.css";
 import data from "@/data.json";
-import { computed, ref, type Ref } from "vue";
+import { computed, ref, type ComputedRef, type Ref } from "vue";
 
 type RateSwitch = "Month" | "Year";
 
@@ -15,10 +15,38 @@ const switchRate = () => {
   }
 };
 
+const calculateLabelArr = (num: number): number[] => {
+  if (num > 20) {
+    return [];
+  }
+  const arr = [];
+  for (let i = 0; i <= num; i++) {
+    if (i !== 0) {
+      arr.push(i / num);
+    } else {
+      arr.push(0);
+    }
+  }
+  return arr;
+};
+
+const activityLabels = calculateLabelArr(8);
+
+const activityMonths = activityLabels.map((label) =>
+  Math.round(label * data.activityMonthScore),
+);
+const activityYears = activityLabels.map((label) =>
+  Math.round(label * data.activityYearScore),
+);
+
 const rateData = computed(() => {
   return rateSwitch.value === "Month"
     ? data.activity.months
     : data.activity.years;
+});
+
+const activityToShow = computed(() => {
+  return rateSwitch.value === "Month" ? activityMonths : activityYears;
 });
 </script>
 
@@ -34,11 +62,9 @@ const rateData = computed(() => {
     <div class="activity__divider"></div>
     <div class="activity__chart">
       <div class="activity__labels">
-        <div class="activity__label text-sm">0</div>
-        <div class="activity__label text-sm">100</div>
-        <div class="activity__label text-sm">200</div>
-        <div class="activity__label text-sm">300</div>
-        <div class="activity__label text-sm">400</div>
+        <div v-for="label in activityToShow" class="activity__label text-sm">{{
+          label
+        }}</div>
       </div>
       <div v-for="rate in rateData" :key="rate.date" class="activity__month">
         <div class="activity__month-name text-sm">{{ rate.date }}</div>

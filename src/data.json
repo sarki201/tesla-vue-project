@@ -6,6 +6,8 @@
   "startingKnowledge": 64,
   "currentKnowledge": 86,
   "knowledgeGain": 34,
+  "activityMonthScore": 400,
+  "activityYearScore": 1200,
   "activity": {
     "years": [
       {
@@ -107,32 +109,32 @@
   "topics": [
     {
       "name": "Covid Protocols",
-      "picture": "@/assets/img/thumbnail-4.png",
+      "picture": "thumbnail-4.png",
       "strength": 95
     },
     {
       "name": "Cyber Security Basics",
-      "picture": "@/assets/img/thumbnail-5.png",
+      "picture": "thumbnail-5.png",
       "strength": 92
     },
     {
       "name": "Social Media Policies",
-      "picture": "@/assets/img/thumbnail-6.png",
+      "picture": "thumbnail-6.png",
       "strength": 89
     },
     {
       "name": "Food Safety",
-      "picture": "@/assets/img/thumbnail-1.png",
+      "picture": "thumbnail-1.png",
       "strength": 74
     },
     {
       "name": "Compliance Basics Procedures",
-      "picture": "@/assets/img/thumbnail-2.png",
+      "picture": "thumbnail-2.png",
       "strength": 52
     },
     {
       "name": "Company Networking",
-      "picture": "@/assets/img/thumbnail-3.png",
+      "picture": "thumbnail-3.png",
       "strength": 36
     }
   ],
@@ -142,105 +144,120 @@
       "name": "Zariyah Suarez",
       "rank": 1,
       "isPromoted": false,
-      "img": ""
+      "img": "avatar-1.png",
+      "points": "637 Points - 89% Correct"
     },
     {
       "id": 2,
       "name": "Soren Rose",
-      "rank": 1,
+      "rank": 2,
       "isPromoted": true,
-      "img": ""
+      "img": "avatar-2.png",
+      "points": "637 Points - 89% Correct"
     },
     {
       "id": 3,
       "name": "Magnolia Bell",
-      "rank": 1,
+      "rank": 3,
       "isPromoted": false,
-      "img": ""
+      "img": "avatar-3.png",
+      "points": "637 Points - 89% Correct"
     },
     {
       "id": 4,
       "name": "Emmett Mullins",
-      "rank": 1,
+      "rank": 4,
       "isPromoted": true,
-      "img": ""
+      "img": "avatar-4.png",
+      "points": "637 Points - 89% Correct"
     },
     {
       "id": 5,
       "name": "Maliyah Singleton",
-      "rank": 1,
+      "rank": 5,
       "isPromoted": false,
-      "img": ""
+      "img": "avatar-5.png",
+      "points": "637 Points - 89% Correct"
     },
     {
       "id": 6,
       "name": "Landyn Greene",
-      "rank": 1,
+      "rank": 6,
       "isPromoted": true,
-      "img": ""
+      "img": "avatar-6.png",
+      "points": "637 Points - 89% Correct"
     },
     {
       "id": 7,
       "name": "Selena Bradley",
-      "rank": 1,
+      "rank": 7,
       "isPromoted": false,
-      "img": ""
+      "img": "avatar-7.png",
+      "points": "637 Points - 89% Correct"
     },
     {
       "id": 8,
       "name": "Richard Conway",
-      "rank": 1,
+      "rank": 8,
       "isPromoted": true,
-      "img": ""
+      "img": "avatar-8.png",
+      "points": "637 Points - 89% Correct"
     },
     {
       "id": 9,
       "name": "Ryann Maddox",
-      "rank": 1,
+      "rank": 9,
       "isPromoted": false,
-      "img": ""
+      "img": "avatar-9.png",
+      "points": "637 Points - 89% Correct"
     },
     {
       "id": 10,
       "name": "Lyric Avalos",
-      "rank": 1,
+      "rank": 10,
       "isPromoted": true,
-      "img": ""
+      "img": "avatar-10.png",
+      "points": "637 Points - 89% Correct"
     },
     {
       "id": 11,
       "name": "Paloma Howard",
-      "rank": 1,
+      "rank": 11,
       "isPromoted": false,
-      "img": ""
+      "img": "avatar-11.png",
+      "points": "637 Points - 89% Correct"
     },
     {
       "id": 12,
       "name": "Jeremiah French",
-      "rank": 1,
+      "rank": 12,
       "isPromoted": true,
-      "img": ""
+      "img": "avatar-12.png",
+      "points": "637 Points - 89% Correct"
     },
     {
       "id": 13,
       "name": "Lorelai McPherson",
-      "rank": 1,
+      "rank": 13,
       "isPromoted": false,
-      "img": ""
+      "img": "avatar-13.png",
+      "points": "637 Points - 89% Correct"
     },
     {
       "id": 14,
       "name": "Foster Harrington",
-      "rank": 1,
+      "rank": 14,
       "isPromoted": true,
-      "img": ""
+      "img": "avatar-14.png",
+      "points": "637 Points - 89% Correct"
     },
     {
       "id": 15,
       "name": "Legacy Lynn",
-      "rank": 1,
+      "rank": 15,
       "isPromoted": false,
-      "img": ""
+      "img": "avatar-15.png",
+      "points": "637 Points - 89% Correct"
     }
   ],
   "groups": [

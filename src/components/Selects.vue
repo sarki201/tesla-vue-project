@@ -37,13 +37,12 @@ const search = ref("");
 
 <template>
   <section class="top-selects">
-    <Select :isSelectOpen="store.state.modals.isTimeframeOpen">
-      <div @click="openTimeframe" class="top-select__selector">
-        <p
-          >Timeframe:<span>{{ timeframe }}</span></p
-        >
-        <i class="pi pi-sort-down-fill top-select__down"></i>
-      </div>
+    <Select
+      :isSelectOpen="store.state.modals.isTimeframeOpen"
+      label="Timeframe"
+      :value="timeframe"
+      @openSelect="openTimeframe"
+    >
       <div class="top-select__divider"></div>
       <button
         v-for="button in buttonsArray"
@@ -53,11 +52,13 @@ const search = ref("");
         {{ button }}
       </button>
     </Select>
-    <Select :isSelectOpen="store.state.modals.isPeopleOpen">
-      <div @click="openPeople" class="top-select__selector">
-        <p>People:<span>All</span></p>
-        <i class="pi pi-sort-down-fill top-select__down"></i>
-      </div>
+    <Select
+      :isSelectOpen="store.state.modals.isPeopleOpen"
+      :openSelect="openPeople"
+      label="People"
+      value="All"
+      @openSelect="openPeople"
+    >
       <div class="top-select__tags">
         <div class="top-select__tag"> Managers <span>&times;</span> </div>
         <div class="top-select__tag"> Adrian Lu <span>&times;</span> </div>
@@ -93,11 +94,12 @@ const search = ref("");
         </label>
       </div>
     </Select>
-    <Select :isSelectOpen="store.state.modals.isTopicOpen">
-      <div @click="openTopic" class="top-select__selector">
-        <p>Topic:<span>All</span></p>
-        <i class="pi pi-sort-down-fill top-select__down"></i>
-      </div>
+    <Select
+      :isSelectOpen="store.state.modals.isTopicOpen"
+      @openSelect="openTopic"
+      label="Topic"
+      value="All"
+    >
     </Select>
   </section>
 </template>

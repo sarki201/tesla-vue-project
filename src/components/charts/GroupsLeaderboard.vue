@@ -3,7 +3,7 @@ import "primeicons/primeicons.css";
 import data from "@/data.json";
 import { ref } from "vue";
 
-const groups = ref(data.groups.slice(0, 4));
+const groups = ref(data.groups);
 </script>
 
 <template>

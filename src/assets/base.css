@@ -144,6 +144,10 @@ header {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #0000001a;
+  position: sticky;
+  top: 0;
+  background-color: #f9f9f9;
+  z-index: 9;
 }
 
 h2 {
@@ -406,13 +410,13 @@ button:active {
 }
 
 .activity__divider {
-  margin-block: 0.5rem 2rem;
+  margin-block: 0.5rem 1.5rem;
   height: 1px;
   background-color: #e4e5e799;
 }
 
 .activity__chart {
-  height: calc(100% - 4rem);
+  height: calc(100% - 3.5rem);
   display: flex;
   justify-content: space-between;
 }
@@ -432,6 +436,7 @@ button:active {
 }
 
 .activity__month {
+  margin-top: 0.5rem;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -538,6 +543,7 @@ button:active {
 .leaderboard__img {
   width: 42px;
   height: 42px;
+  border-radius: 9999px;
 }
 
 .leaderboard__info>h4 {
